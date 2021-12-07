@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>magnet package &mdash; magnet 0.1.dev1+gf9420c9 documentation</title>
+  <title>magnet package &mdash; magnet 0.1.dev1+g6688052 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
             <a href="index.html" class="icon icon-home"> magnet
           </a>
               <div class="version">
-                0.1.dev1+gf9420c9
+                0.1.dev1+g6688052
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -136,7 +136,7 @@
 <span id="magnet-core-module"></span><h2>magnet.core module<a class="headerlink" href="#module-magnet.core" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="magnet.core.core_loss_ML_arbitrary">
-<span class="sig-prename descclassname"><span class="pre">magnet.core.</span></span><span class="sig-name descname"><span class="pre">core_loss_ML_arbitrary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">freq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flux_p2p</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duty_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">material</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magnet.core.core_loss_ML_arbitrary" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">magnet.core.</span></span><span class="sig-name descname"><span class="pre">core_loss_ML_arbitrary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">material</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flux</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frac_time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#magnet.core.core_loss_ML_arbitrary" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
@@ -162,7 +162,7 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>freq</strong> – Frequency of excitation waveform (Hz)</p></li>
-<li><p><strong>flux</strong> – Relative Flux Density (mT) in a single waveform cycle, as an ndarray</p></li>
+<li><p><strong>flux</strong> – Relative Flux Density (T) in a single waveform cycle, as an ndarray</p></li>
 <li><p><strong>frac_time</strong> – Fractional time wrt time period, in [0, 1], in a single waveform cycle, as an ndarray</p></li>
 <li><p><strong>k_i</strong> – Steinmetz coefficient k_i</p></li>
 <li><p><strong>alpha</strong> – Steinmetz coefficient alpha</p></li>
@@ -172,7 +172,7 @@
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Core loss (kW/m^3)</p>
+<dd class="field-even"><p>Core loss (W/m^3)</p>
 </dd>
 </dl>
 </dd></dl>
